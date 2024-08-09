@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/mathieudebavelaere/Documents/Udemy_C#_.NET/générateur_mot_de_passe/générateur_mot_de_passe/générateur_mot_de_passe.csproj": {}
+  },
+  "projects": {
+    "/Users/mathieudebavelaere/Documents/Udemy_C#_.NET/générateur_mot_de_passe/générateur_mot_de_passe/générateur_mot_de_passe.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mathieudebavelaere/Documents/Udemy_C#_.NET/générateur_mot_de_passe/générateur_mot_de_passe/générateur_mot_de_passe.csproj",
+        "projectName": "générateur_mot_de_passe",
+        "projectPath": "/Users/mathieudebavelaere/Documents/Udemy_C#_.NET/générateur_mot_de_passe/générateur_mot_de_passe/générateur_mot_de_passe.csproj",
+        "packagesPath": "/Users/mathieudebavelaere/.nuget/packages/",
+        "outputPath": "/Users/mathieudebavelaere/Documents/Udemy_C#_.NET/générateur_mot_de_passe/générateur_mot_de_passe/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/mathieudebavelaere/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
