@@ -2,11 +2,12 @@ namespace générateur_mot_de_passe;
 
 static class boite_outils
 {
-    public static int DemanderNombre(string question="ATTENTION: Aucune question n'est demandé dans les paramètres. \n La valeur retourner de cette fonction est un (int NUMBER). \n Ainsi que les valeurs minimal et maximal sont par défaut de (0 à 10). ", int minValue=0, int maxValue=10)
+
+    public static int DemanderNombre(string question="ATTENTION: Aucune question n'est demandé dans les paramètres. \n La valeur retourner de cette fonction est un (int NUMBER). \n Ainsi que les valeurs minimal et maximal sont par défaut de (0 à 10). ", int minValue = 0, int maxValue = 10)
     {
         Console.WriteLine(question);
-        int NUMBER = minValue;
-        while (NUMBER <= minValue || NUMBER > maxValue)
+        int NUMBER = -1;
+        while (NUMBER < minValue || NUMBER > maxValue)
         {
             Console.Write("Réponse : ");
             string number_str = Console.ReadLine();
@@ -14,12 +15,10 @@ static class boite_outils
             try
             {
                 NUMBER = int.Parse(number_str);
-                if (NUMBER >= maxValue + 1)
+                if (NUMBER > maxValue)
                     Console.WriteLine($"Erreur : Le nombre ne doit pas être superieur à {maxValue}");
                 if (NUMBER < minValue)
                     Console.WriteLine($"Erreur : Le nombre ne doit pas être inferieur à {minValue}");
-                if (NUMBER == minValue)
-                    Console.WriteLine($"Erreur: Le nombre ne doit pas être égal à {minValue}");
             }
             catch
             {
@@ -40,7 +39,7 @@ static class boite_outils
 
         int numberQuestion = boite_outils.DemanderNombre("Combien de caractère souhaitez-vous générer ?", 0, 100);
 
-        for (int o = 0; o < numberGenerate; o++)
+        for (int o = 1; o < numberGenerate +1; o++)
         {
             string motDePasse = "";
             string alphabet_min = "";
@@ -76,7 +75,7 @@ static class boite_outils
             }
 
             Console.WriteLine("");
-            Console.WriteLine($"Mode de passe n°{o + 1}: {motDePasse}");
+            Console.WriteLine($"Mode de passe n°{o}: {motDePasse}");
         }
 
         Console.WriteLine("");
